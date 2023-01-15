@@ -48,7 +48,7 @@ const Drives = (props) => {
             return;
         }
 
-        if (props.driveSearch !=
+        if (props.driveSearch !==
             '' &&
             !drive.dataName.toLowerCase().includes(props.driveSearch.toLowerCase())) {
             return;
@@ -89,7 +89,7 @@ const Drives = (props) => {
                 <VictoryZoomContainer/>
             }
         >
-            <VictoryLabel y={20} text="Terra Invicta Drive Chart" textAnchor="left"/>
+            <VictoryLabel y={20} text="Terra Invicta Drive Chart"/>
             <VictoryScatter
                 style={{data: {fill: '#c43a31'}}}
                 size={1}
