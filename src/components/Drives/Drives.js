@@ -16,7 +16,7 @@ const normalizedDrives = [];
 let classifications = [];
 let powerPlants     = [];
 drivesJson.forEach(drive => {
-    if (drive.dataName.slice(-2) !== 'x1') {
+    if (drive.dataName.slice(-2) !== 'x1' || drive.dataName.startsWith('Alien')) {
         return;
     }
 

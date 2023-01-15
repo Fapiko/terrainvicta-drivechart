@@ -41,11 +41,17 @@ const DriveInfo = (props) => {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         {drive.friendlyName}
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{mt: 2}}>
+                    <Typography sx={{mt: 2}}>
+                        Required Power Plant: {drive.requiredPowerPlant.replaceAll('_', ' ')}
+                    </Typography>
+                    <Typography sx={{mt: 1}}>
                         Thrust: {drive.thrust_N / 1000} kN
                     </Typography>
                     <Typography>
                         ΔV: {drive.EV_kps} kps
+                    </Typography>
+                    <Typography sx={{mt: 1}}>
+                        Efficiency: {drive.efficiency * 100}%
                     </Typography>
                     <p>Required Research</p>
                     <ul>
