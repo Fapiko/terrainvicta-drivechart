@@ -6,6 +6,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import PowerPlants from './components/PowerPlants/PowerPlants';
 import {useState} from 'react';
+import Footer from './components/Footer';
 
 function App() {
     const [filters, setFilters] = useState({});
@@ -39,6 +40,7 @@ function App() {
                                  filters={filters}/>
                 </Grid>
             </Grid>
+            <Footer/>
         </>
     )
 
